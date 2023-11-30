@@ -34,6 +34,9 @@ jobs:
           role-session-name: Github
           aws-region: ${{ env.AWS_REGION }}
 
+      - name: s3
+        run: |
+          aws s3 ls
       # - name: Login to Amazon Ecr
       #   id: login-ecr
       #   uses: aws-actions/amazon-ecr-login@v1
